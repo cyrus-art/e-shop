@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Dress Shop࿔𐦍</title>
+
+    <!-- Load static files -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'first.css' %}">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">
+        <h1>Cₗₐₛₛᵢc  Dᵣₑₛₛ ₛₕₒₚ࿔𐦍</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{% url 'men' %}">Men♂</a></li>
+            <li><a href="{% url 'women' %}">Women♀</a></li>
+            <li><a href="{% url 'kids' %}">Kind</a></li>
+            <li><a href="#more-collection">More Collection</a></li>
+            <li><a href="{% url 'second' %}">Login🔑</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Banner -->
+<section class="banner" style="background-image: url('{% static 'img/ki 1.gif' %}');">
+    <div class="banner-content">
+        <h2>Elegance Awaits</h2>
+        <p>Discover timeless fashion for every occasion.</p>
+        <a href="{% url 'second' %}" class="shop-now-link">
+            <button class="shop-now-btn">Shop Now🛒🛍️</button>
+        </a>
+    </div>
+</section>
+
+<!-- Featured Men's Collection -->
+<section id="men" class="featured">
+    <h2>Men's Collection</h2>
+    <div class="featured-items-wrapper">
+        <div class="featured-items">
+            <div class="item" style="background-image: url('{% static 'img/me6.png' %}');">
+                <h3>Classic Men's Suit</h3>
+                <p>$199.99</p>
+            </div>
+            <div class="item" style="background-image: url('{% static 'img/me5.png' %}');">
+                <h3>Casual Wear</h3>
+                <p>$79.99</p>
+            </div>
+            <div class="item" style="background-image: url('{% static 'img/me4.png' %}');">
+                <h3>Casual Wear</h3>
+                <p>$79.99</p>
+            </div>
+            <div class="item" style="background-image: url('{% static 'img/me2.png' %}');">
+                <h3>Casual Wear</h3>
+                <p>$79.99</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Women's Collection -->
+<section id="women" class="featured">
+    <h2>Women's Collection</h2>
+    <div class="featured-items-wrapper">
+        <div class="featured-items">
+            <div class="item" style="background-image: url('{% static 'img/wo7.png' %}');">
+                <h3>Elegant Red Dress</h3>
+                <p>$129.99</p>
+            </div>
+            <div class="item" style="background-image: url('{% static 'img/wp6.png' %}');">
+                <h3>Classic Black Gown</h3>
+                <p>$159.99</p>
+            </div>
+            <div class="item" style="background-image: url('{% static 'img/wo5.png' %}');">
+                <h3>Classic Black Gown</h3>
+                <p>$159.99</p>
+            </div>
+            <div class="item" style="background-image: url('{% static 'img/wo4.png' %}');">
+                <h3>Classic Black Gown</h3>
+                <p>$159.99</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Featured Kids Collection -->
+<section id="kids" class="featured">
+    <h2>Kind Collection</h2>
+    <div class="featured-items-wrapper">
+        <div class="featured-items">
+            <div class="item" style="background-image: url('{% static 'img/wo3.png' %}');">
+                <h3>Stylish Dress</h3>
+                <p>$99.99</p>
+            </div>
+            <div class="item" style="background-image: url('{% static 'img/me2.png' %}');">
+                <h3>Vintage White Dress</h3>
+                <p>$119.99</p>
+            </div>
+            <div class="item" style="background-image: url('{% static 'img/wo2.png' %}');">
+                <h3>Vintage White Dress</h3>
+                <p>$119.99</p>
+            </div>
+            <div class="item" style="background-image: url('{% static 'img/me1.png' %}');">
+                <h3>Vintage White Dress</h3>
+                <p>$119.99</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- More Collections -->
+<section id="more-collection" class="more-collection">
+    <h2>More Collections</h2>
+    <a href="#shop" class="view-more-btn">View More</a>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+    <div class="footer-content">
+        <h3>Connect with Us</h3>
+        <ul>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram ✈︎</a></li>
+            <li><a href="https://wa.me/1234567890" target="_blank">WhatsApp🟢</a></li>
+            <li><a href="mailto:contact@dressshop.com">Email Us📨</a></li>
+            <li><a href="https://www.dressshop.com" target="_blank">Website🔗</a></li>
+        </ul>
+    </div>
+    <p>&copy; 2024 Classic Dress Shop. All rights reserved.</p>
+</footer>
+
+<!-- Optional Animation Script (Only works if anime.js is included) -->
+<!-- 
+<script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script>
+<script>
+    anime({
+        targets: '.featured-items .item',
+        translateX: '100%',
+        duration: 2000,
+        loop: true,
+        easing: 'easeInOutSine'
+    });
+</script>
+-->
+
+</body>
+</html>

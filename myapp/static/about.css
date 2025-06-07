@@ -1,0 +1,82 @@
+/* About Us Section */
+.about-us {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.about-us h2 {
+    font-size: 36px;
+    color: #c380f0;
+    margin-bottom: 20px;
+}
+
+.about-us p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.about-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 40px;
+}
+
+.about-text {
+    width: 50%;
+    text-align: left;
+}
+
+.about-text h3 {
+    font-size: 28px;
+    color: #c380f0;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.mission {
+    background-color: #c380f0;
+    color: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.mission h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+.mission p {
+    font-size: 18px;
+    color: white;
+    line-height: 1.6;
+}
+
+.btn-shop-now {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #c15ffa;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-shop-now:hover {
+    background-color: #ff3c00;
+}

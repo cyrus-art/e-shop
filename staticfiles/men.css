@@ -1,0 +1,238 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #bc8ef0;
+    color: #000000;
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+header .logo h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+    margin-left: 20px;
+}
+
+/* General Navigation Styles */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+}
+
+header nav ul li {
+    display: inline-block; /* Makes sure the list items align horizontally */
+    margin: 0 15px; /* Space between the list items */
+}
+
+/* Link Styles */
+header nav ul li a {
+    text-decoration: none;
+    color: white; /* Default link color */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover Effect */
+header nav ul li a:hover {
+    color: #553f0f; /* Color on hover */
+}
+
+
+/* Banner Styling */
+.banner {
+    height: 500px;
+    background-size: auto;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+   
+}
+
+.banner .banner-content h2 {
+    font-size: 3rem;
+    color: #000000;
+    margin-bottom: 10px;
+}
+
+.banner .banner-content p {
+    font-size: 1.5rem;
+    color: #111010;
+}
+
+/* Featured Collection Styling */
+.featured {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #bc8ef0;
+}
+
+.featured-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.item {
+    width: 28%;
+    margin: 15px;
+    background-size: cover;
+    background-position: center;
+    height: 350px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.item:hover {
+    transform: scale(1.05);
+}
+
+.item h3, .item p {
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+    margin: 20px;
+}
+
+.item button {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: #b065c7;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+.item {
+    background-size: cover;
+    background-position: center;
+    padding: 50px; /* Increased padding for more space inside */
+    border-radius: 8px;
+    color: rgb(14, 14, 14);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;  /* Allows absolute positioning of elements inside */
+    height: 450px;  /* Increased height for more room */
+    width: 315px;  /* Fixed width for consistent layout */
+}
+
+
+.item button:hover {
+    background-color: #e55a00;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #bc8ef0;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+footer ul li {
+    display: inline-block;
+    margin: 0 15px;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #ff6600;
+}
+
+footer p {
+    margin-top: 20px;
+    font-size: 1rem;
+    color: #fff7f7;
+}
+
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 768px) {
+    .featured-items {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .item {
+        width: 80%;
+    }
+
+    .banner .banner-content h2 {
+        font-size: 2.5rem;
+    }
+
+    .banner .banner-content p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    header nav ul {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    header nav ul li {
+        margin-bottom: 10px;
+    }
+
+    .item h3 {
+        font-size: 1.5rem;
+    }
+
+    .item p {
+        font-size: 1.1rem;
+    }
+
+    footer ul li {
+        margin: 0 10px;
+    }
+}

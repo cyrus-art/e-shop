@@ -1,0 +1,185 @@
+/* General Reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+/* General Navigation Styles */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+}
+
+header nav ul li {
+    display: inline-block; /* Makes sure the list items align horizontally */
+    margin: 0 15px; /* Space between the list items */
+}
+
+/* Link Styles */
+header nav ul li a {
+    text-decoration: none;
+    color: white; /* Default link color */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover Effect */
+header nav ul li a:hover {
+    color: #553f0f; /* Color on hover */
+}
+/* Banner Section */
+.banner {
+    background-size: 500px;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-content h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.banner-content p {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Featured Items Section */
+.featured {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.featured h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.featured-items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.featured-items .item {
+    width: 200px;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+}
+
+.featured-items .item:hover {
+    transform: scale(1.05);
+}
+
+.featured-items .item h3 {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.featured-items .item p {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #007bff;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Scroll animations for featured items */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.featured-items .item {
+    animation: slideIn 0.5s ease-in-out forwards;
+}

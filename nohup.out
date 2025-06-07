@@ -1,0 +1,39 @@
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 28, 2025 - 07:06:42
+Django version 4.2.11, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+[28/Mar/2025 07:07:27] "GET / HTTP/1.1" 200 5250
+[28/Mar/2025 07:07:27] "GET /static/first.css HTTP/1.1" 200 5312
+[28/Mar/2025 07:07:27] "GET /static/img/wo7.png HTTP/1.1" 200 56762
+[28/Mar/2025 07:07:27] "GET /static/img/me4.png HTTP/1.1" 200 137033
+[28/Mar/2025 07:07:27] "GET /static/img/ki%201.gif HTTP/1.1" 200 136767
+[28/Mar/2025 07:07:27] "GET /static/img/me5.png HTTP/1.1" 200 137542
+[28/Mar/2025 07:07:27] "GET /static/img/me6.png HTTP/1.1" 200 122449
+[28/Mar/2025 07:07:27] "GET /static/img/me2.png HTTP/1.1" 200 153527
+[28/Mar/2025 07:07:27] "GET /static/img/me1.png HTTP/1.1" 200 133853
+[28/Mar/2025 07:07:27] "GET /static/img/wo2.png HTTP/1.1" 200 87450
+[28/Mar/2025 07:07:27] "GET /static/img/wo4.png HTTP/1.1" 200 95294
+[28/Mar/2025 07:07:27] "GET /static/img/wo3.png HTTP/1.1" 200 88839
+[28/Mar/2025 07:07:27] "GET /static/img/wp6.png HTTP/1.1" 200 139498
+[28/Mar/2025 07:07:27] "GET /static/img/wo5.png HTTP/1.1" 200 70027
+Not Found: /favicon.ico
+[28/Mar/2025 07:07:27] "GET /favicon.ico HTTP/1.1" 404 4485
+[28/Mar/2025 07:07:54] "GET / HTTP/1.1" 200 5250
+Watching for file changes with StatReloader
+Performing system checks...
+
+System check identified no issues (0 silenced).
+March 28, 2025 - 07:11:17
+Django version 4.2.11, using settings 'myproject.settings'
+Starting development server at http://127.0.0.1:8000/
+Quit the server with CONTROL-C.
+
+[28/Mar/2025 07:20:46] "GET / HTTP/1.1" 200 5250
+[28/Mar/2025 07:20:48] "GET / HTTP/1.1" 200 5250
+[28/Mar/2025 07:20:49] "GET / HTTP/1.1" 200 5250
+[28/Mar/2025 07:20:49] "GET / HTTP/1.1" 200 5250

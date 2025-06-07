@@ -1,0 +1,42 @@
+{% load static %}
+<!-- Correct static file link -->
+<link rel="stylesheet" href="{% static 'help.css' %}">
+<section class="help-support">
+    <div class="container">
+        <h2>Need Help?</h2>
+        <p>If you have any questions or need assistance, we're here to help. Below you'll find answers to frequently asked questions (FAQs), along with information on how to get in touch with our customer support team.</p>
+        
+        <a href="{%  url 'third' %}" class="btn-shop-now">Home</a>
+
+        <!-- FAQs Section -->
+        <div class="faq">
+            <h3>Frequently Asked Questions</h3>
+            <div class="faq-item">
+                <h4>What size should I choose?</h4>
+                <p>We offer a wide range of sizes for every body type. You can find our size guide on each product page. If you need further assistance, feel free to contact us.</p>
+            </div>
+            <div class="faq-item">
+                <h4>How do I place an order?</h4>
+                <p>Simply browse through our collections, add your desired items to the cart, and proceed to checkout. We accept various payment methods including credit cards and PayPal.</p>
+            </div>
+            <div class="faq-item">
+                <h4>What is your return policy?</h4>
+                <p>We offer a 30-day return policy. You can return any unworn, unwashed, or damaged items within 30 days of purchase for a full refund or exchange. Please visit our Returns & Exchanges page for more details.</p>
+            </div>
+        </div>
+
+        <!-- Contact Support Section -->
+        <div class="contact-support">
+            <h3>Contact Our Support Team</h3>
+            <p>If you can't find the answer to your question or need further help, feel free to reach out to our support team. We're here to assist you.</p>
+            <p>Email: <a href="mailto:support@elegantdresses.com">support@elegantdresses.com</a></p>
+            <p>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></p>
+        </div>
+
+        <!-- Live Chat Option -->
+        <div class="live-chat">
+            <h3>Live Chat</h3>
+            <p>For instant assistance, you can use our live chat feature available at the bottom-right corner of the screen. Our customer service team will respond as soon as possible.</p>
+        </div>
+    </div>
+</section>

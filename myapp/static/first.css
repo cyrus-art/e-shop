@@ -1,0 +1,213 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    color: #c75fe0;
+}
+
+/* Header Styling */
+header {
+    background-color: #674975;
+    color: rgb(184, 83, 224);
+    padding: 20px;
+    text-align: center;
+}
+
+header .logo h1 {
+    font-size: 36px;
+    color: whitesmoke;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+header nav ul li a:hover {
+    color: #b56fd6;
+}
+
+/* Banner Section */
+.banner {
+    background-color: #b259ee;
+    color: white;
+    padding: 100px 0px;
+    text-align: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.banner h2 {
+    font-size: 48px;
+    margin-bottom: 10px;
+    color: black;
+}
+
+.banner p {
+    font-size: 22px;
+    margin-bottom: 30px;
+    color: black;
+}
+
+.shop-now-btn {
+    background-color: #b472e0;
+    border: none;
+    padding: 15px 30px;
+    font-size: 18px;
+    cursor: pointer;
+    color: white;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.shop-now-btn:hover {
+    background-color: #ac65e6;
+}
+
+/* Featured Sections */
+.featured {
+    padding: 50px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+.featured h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+/* Wrapper around horizontal scroll */
+.featured-items-wrapper {
+    overflow-x: auto;
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    padding: 1rem 0;
+    width: auto;
+}
+
+/* Items container that is horizontal flex */
+.featured-items {
+    display: inline-flex;
+    gap: 20px;
+    flex-wrap: nowrap;
+}
+
+/* Individual item styling */
+.item {
+    background-size: cover;
+    background-position: center;
+    width: 280px;
+    height: 400px;
+    margin: 10px 0;
+    color: rgb(241, 238, 238);
+    text-align: center;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    opacity: 0.8;
+    transition: opacity 0.3s, transform 0.3s;
+    flex-shrink: 0; /* Prevent shrinking */
+}
+
+.item:hover {
+    opacity: 1;
+    transform: scale(1.05);
+}
+
+.item h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.item p {
+    font-size: 20px;
+}
+
+/* More Collection Section */
+.more-collection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 20px;
+    background-color: #f1f1f1;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.view-more-btn {
+    background-color: #b068da;
+    color: white;
+    padding: 10px 25px;
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.view-more-btn:hover {
+    background-color: #a455e6;
+}
+
+/* Footer Section */
+footer {
+    background-color: #b164dd;
+    color: white;
+    text-align: center;
+    padding: 30px 0;
+}
+
+footer .footer-content h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer .footer-content ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+footer .footer-content ul li {
+    margin: 0 15px;
+}
+
+footer .footer-content ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+footer .footer-content ul li a:hover {
+    color: #c889e0;
+}
+
+footer p {
+    font-size: 16px;
+    margin-top: 10px;
+}

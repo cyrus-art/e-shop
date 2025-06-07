@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mens Dress Collection࿔𐦍</title>
+
+    <!-- Load static files -->
+    {% load static %}
+    <!-- Correct static file link -->
+    <link rel="stylesheet" href="{% static 'men.css' %}">
+</head>
+<body>
+
+<!-- Header -->
+<header>
+    <div class="logo">
+        <h1>Mens Collection࿔𐦍</h1>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="{% url 'third' %}">HOME</a></li>
+            <li><a href="{% url 'five' %}">ORDERS</a></li>
+            <li><a href="{% url 'help' %}">HELP</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!-- Main Banner -->
+<section class="banner" style="background-image: url('{% static 'img/ki 1.gif' %}');">
+    <div class="banner-content">
+        <h2>Elegance Awaits</h2>
+        <p>Discover timeless fashion for every occasion.</p>
+    </div>
+</section>
+
+<!-- Featured Men Collection -->
+<section id="men" class="featured">
+    <h2>Men's Collection</h2>
+    <div class="featured-items">
+        <!-- Red Dress Item with form submission -->
+        <div class="item" style="background-image: url('{% static 'img/2.gif' %}');">
+            <h3>Red Dress</h3>
+            <p>$15.99</p>
+            <form method="POST" action="{% url 'add_to_cart' %}">
+                {% csrf_token %}
+                <input type="hidden" name="item_name" value="Red Dress">
+                <input type="hidden" name="price" value="15.99">
+                <input type="hidden" name="user_name" value="{{ user.username }}"> <!-- Corrected to match Django context -->
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </div>
+
+        <!-- Elegant Black Gown -->
+        <div class="item" style="background-image: url('{% static 'img/ki 6.png' %}');">
+            <h3>Elegant Black Gown</h3>
+            <p>$159.99</p>
+            <form method="POST" action="{% url 'add_to_cart' %}">
+                {% csrf_token %}
+                <input type="hidden" name="item_name" value="Elegant Black Gown">
+                <input type="hidden" name="price" value="159.99">
+                <input type="hidden" name="user_name" value="{{ user.username }}">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </div>
+
+        <!-- Vintage White Dress -->
+        <div class="item" style="background-image: url('{% static 'img/3.png' %}');">
+            <h3>Vintage White Dress</h3>
+            <p>$119.99</p>
+            <form method="POST" action="{% url 'add_to_cart' %}">
+                {% csrf_token %}
+                <input type="hidden" name="item_name" value="Vintage White Dress">
+                <input type="hidden" name="price" value="119.99">
+                <input type="hidden" name="user_name" value="{{ user.username }}">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </div>
+
+        <!-- Additional Items (you can update these if you need different products) -->
+        <div class="item" style="background-image: url('{% static 'img/ki 3.png' %}');">
+            <h3>Floral Summer Dress</h3>
+            <p>$99.99</p>
+            <form method="POST" action="{% url 'add_to_cart' %}">
+                {% csrf_token %}
+                <input type="hidden" name="item_name" value="Floral Summer Dress">
+                <input type="hidden" name="price" value="99.99">
+                <input type="hidden" name="user_name" value="{{ user.username }}">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </div>
+
+        <!-- Repeat items if necessary, changing the background image -->
+        <div class="item" style="background-image: url('{% static 'img/men 1.jpg' %}');">
+            <h3>Floral Summer Dress</h3>
+            <p>$99.99</p>
+            <form method="POST" action="{% url 'add_to_cart' %}">
+                {% csrf_token %}
+                <input type="hidden" name="item_name" value="Floral Summer Dress">
+                <input type="hidden" name="price" value="99.99">
+                <input type="hidden" name="user_name" value="{{ user.username }}">
+                <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+            </form>
+        </div>
+
+        <!-- Add other items similarly -->
+
+    </div>
+</section>
+
+<!-- Footer -->
+<footer id="contact">
+    <div class="footer-content">
+        <h3>Connect with Us</h3>
+        <ul>
+            <li><a href="https://www.instagram.com" target="_blank">Instagram</a></li>
+            <li><a href="https://wa.me/1234567890" target="_blank">WhatsApp</a></li>
+            <li><a href="mailto:contact@dressshop.com">Email Us</a></li>
+            <li><a href="https://www.dressshop.com" target="_blank">Website</a></li>
+        </ul>
+    </div>
+    <p>&copy; 2024 Classic Dress Shop. All rights reserved.</p>
+</footer>
+
+<!-- JavaScript for Animation -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/animejs@3.2.1/lib/anime.min.js"></script> -->
+<script>
+    anime({
+        targets: '.featured-items .item',
+        translateX: ['10%', '1000%'], /* Start from 100% to 0% to move from right */
+        opacity: [111, 111],
+       
+        delay: anime.stagger(20), /* Stagger delay between items */
+        easing: 'easeInOutSine',
+        loop: true
+    });
+</script>
+
+</body>
+</html>

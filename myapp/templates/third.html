@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Dress Shop࿔𐦍</title>
+
+    <!-- Load static files -->
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'third.css' %}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <h1>Cₗₐₛₛᵢc Dᵣₑₛₛ ₛₕₒₚ࿔𐦍</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="{% url 'about' %}">About🔎</a></li>
+                <li><a href="{% url 'five' %}">ORDERS🛒</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Banner -->
+    <section class="banner" style="background-image: url('{% static  'img/wo3.png' %}');">
+        <div class="banner-content">
+            <h2>Elegance Awaits</h2>
+            <p>Discover timeless fashion</p>
+        </div>
+    </section>
+
+    
+  
+    <!-- Featured Dresses -->
+    <section class="featured">
+        <h2>Featured Dresses</h2> 
+           
+
+        <div class="button-group">
+            <a href="{% url 'men' %}" class="btn-category">Men</a>
+            <a href="{% url 'women' %}" class="btn-category">Women</a>
+            <a href="{% url 'kids' %}" class="btn-category">Kids</a>
+        </div>
+
+        
+        <div class="featured-items">
+            <!-- Red Dress Item with form submission -->
+            <div class="item" style="background-image: url('{% static 'img/me6.png' %}');">
+                <h3>Red Dress</h3>
+                <p>$15.99</p>  
+                <form method="POST" action="{% url 'add_to_cart' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="item_name" value="Red Dress">
+                    <input type="hidden" name="price" value="15.99">
+                    <input type="hidden" name="user_name" value="{{ user.user_name }}"> <!-- Make sure user is passed in context -->
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+
+            <!-- Other Items with form submission -->
+            <div class="item" style="background-image: url('{% static 'img/ki 1.gif' %}');">
+                <h3>Elegant Black Gown</h3>
+                <p>$159.99</p>
+                <form method="POST" action="{% url 'add_to_cart' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="item_name" value="Elegant Black Gown">
+                    <input type="hidden" name="price" value="159.99">
+                    <input type="hidden" name="user_name" value="{{ user_name }}"> <!-- user_name passed from context -->
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="item" style="background-image: url('{% static 'img/me5.png' %}');">
+                <h3>Vintage White Dress</h3>
+                <p>$119.99</p>
+                <form method="POST" action="{% url 'add_to_cart' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="item_name" value="Vintage White Dress">
+                    <input type="hidden" name="price" value="119.99">
+                    <input type="hidden" name="user_name" value="{{ user_name }}">
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="item" style="background-image: url('{% static 'img/wo1.png' %}');">
+                <h3>Floral Summer Dress</h3>
+                <p>$99.99</p>
+                <form method="POST" action="{% url 'add_to_cart' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="item_name" value="Floral Summer Dress">
+                    <input type="hidden" name="price" value="99.99">
+                    <input type="hidden" name="user_name" value="{{ user_name }}">
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="item" style="background-image: url('{% static 'img/me4.png' %}');">
+                <h3>Floral Summer Dress</h3>
+                <p>$99.99</p>
+                <form method="POST" action="{% url 'add_to_cart' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="item_name" value="Floral Summer Dress">
+                    <input type="hidden" name="price" value="99.99">
+                    <input type="hidden" name="user_name" value="{{ user_name }}">
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="item" style="background-image: url('{% static 'img/1.png' %}');">
+                <h3>Floral Summer Dress</h3>
+                <p>$99.99</p>
+                <form method="POST" action="{% url 'add_to_cart' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="item_name" value="Floral Summer Dress">
+                    <input type="hidden" name="price" value="99.99">
+                    <input type="hidden" name="user_name" value="{{ user_name }}">
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="item" style="background-image: url('{% static 'img/wo2.png' %}');">
+                <h3>Floral Summer Dress</h3>
+                <p>$99.99</p>
+                <form method="POST" action="{% url 'add_to_cart' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="item_name" value="Floral Summer Dress">
+                    <input type="hidden" name="price" value="99.99">
+                    <input type="hidden" name="user_name" value="{{ user_name }}">
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="item" style="background-image: url('{% static 'img/m3.png' %}');">
+                <h3>Floral Summer Dress</h3>
+                <p>$99.99</p>
+                <form method="POST" action="{% url 'add_to_cart' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="item_name" value="Floral Summer Dress">
+                    <input type="hidden" name="price" value="99.99">
+                    <input type="hidden" name="user_name" value="{{ user_name }}">
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="item" style="background-image: url('{% static 'img/wo3.png' %}');">
+                <h3>Floral Summer Dress</h3>
+                <p>$99.99</p>
+                <form method="POST" action="{% url 'add_to_cart' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="item_name" value="Floral Summer Dress">
+                    <input type="hidden" name="price" value="99.99">
+                    <input type="hidden" name="user_name" value="{{ user_name }}">
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="item" style="background-image: url('{% static 'img/me1.png' %}');">
+                <h3>Floral Summer Dress</h3>
+                <p>$99.99</p>
+                <form method="POST" action="{% url 'add_to_cart' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="item_name" value="Floral Summer Dress">
+                    <input type="hidden" name="price" value="99.99">
+                    <input type="hidden" name="user_name" value="{{ user_name }}">
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="item" style="background-image: url('{% static 'img/wo4.png' %}');">
+                <h3>Floral Summer Dress</h3>
+                <p>$99.99</p>
+                <form method="POST" action="{% url 'add_to_cart' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="item_name" value="Floral Summer Dress">
+                    <input type="hidden" name="price" value="99.99">
+                    <input type="hidden" name="user_name" value="{{ user_name }}">
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+
+            <div class="item" style="background-image: url('{% static 'img/me6.png' %}');">
+                <h3>Floral Summer Dress</h3>
+                <p>$99.99</p>
+                <form method="POST" action="{% url 'add_to_cart' %}">
+                    {% csrf_token %}
+                    <input type="hidden" name="item_name" value="Floral Summer Dress">
+                    <input type="hidden" name="price" value="99.99">
+                    <input type="hidden" name="user_name" value="{{ user_name }}">
+                    <button type="submit" class="add-to-cart-btn">Add to Cart</button>
+                </form>
+            </div>
+
+
+        </div>
+    </section>
+
+    <!-- Modal for 3D effect -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="Dress Image">
+        </div>
+    </div>
+
+    <!-- Offers Section -->
+    <section class="offers">
+        <h2>Special Offers</h2>
+        <div class="offer-item">
+            <h3>Winter Sale</h3>
+            <p>Up to 50% off on select dresses</p>
+        </div>
+        <div class="offer-item">
+            <h3>Free Shipping</h3>
+            <p>Enjoy free shipping on all orders above $100</p>
+        </div>
+        <div class="offer-item">
+            <h3>Exclusive Discounts</h3>
+            <p>Sign up and get 20% off your first purchase</p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Classic Dress Shop. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to Open and Close Modal -->
+    <script>
+        // Function to open modal
+        function openModal(imageUrl) {
+            const modal = document.getElementById('modal');
+            const modalImage = document.getElementById('modalImage');
+            modalImage.src = imageUrl;
+            modal.style.display = 'flex';
+        }
+
+        // Function to close modal
+        function closeModal() {
+            const modal = document.getElementById('modal');
+            modal.style.display = 'none';
+        }
+    </script>
+
+    <script>
+        // Correct animation for featured items
+        anime({
+            targets: '.featured-items .item', // Target each item in the featured items list
+            translateX: '100%',  // Moves the items horizontally
+            duration: 2000, // Duration for the animation
+            loop: true, // Infinite loop
+            easing: 'easeInOutSine' // Smooth easing for the animation
+        });
+    </script>
+
+</body>
+</html>

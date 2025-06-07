@@ -1,0 +1,113 @@
+/* Help & Support Section */
+.help-support {
+    padding: 50px 20px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.help-support h2 {
+    font-size: 36px;
+    color: #c380f0;
+    margin-bottom: 20px;
+}
+
+.help-support p {
+    font-size: 18px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* FAQs */
+.faq {
+    margin-bottom: 40px;
+    text-align: left;
+}
+
+.faq h3 {
+    font-size: 28px;
+    color: #c380f0;
+    margin-bottom: 20px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h4 {
+    font-size: 22px;
+    color: #000;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 18px;
+    color: #555;
+}
+
+/* Contact Support */
+.contact-support {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin-bottom: 40px;
+}
+
+.contact-support h3 {
+    font-size: 28px;
+    color: #c380f0;
+    margin-bottom: 20px;
+}
+
+.contact-support p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 10px;
+}
+
+.contact-support a {
+    color: #c380f0;
+    text-decoration: none;
+}
+
+.contact-support a:hover {
+    text-decoration: underline;
+}
+
+/* Live Chat */
+.live-chat {
+    background-color: #c380f0;
+    color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.live-chat h3 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.live-chat p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+.btn-shop-now {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #c15ffa;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-shop-now:hover {
+    background-color: #ff3c00;
+}

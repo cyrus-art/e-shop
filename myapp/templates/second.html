@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page࿔𐦍</title>
+    {% load static %}
+    <!-- Correct static file link -->
+    <link rel="stylesheet" href="{% static 'second.css' %}">
+</head>
+<body>
+
+<div class="login-container">
+    <h2>Login</h2>
+    <form action="{% url 'second' %}" method="POST"  autocomplete="off">
+        {% csrf_token %} 
+
+        <div class="input-field">
+            <label for="user_name">Name:</label>
+            <input type="text" id="user_name" name="user_name" required>
+        </div>
+
+        <div class="input-field">
+            <label for="contact">Contact Number:</label>
+            <input type="text" id="phone_number" name="phone_number" required>
+        </div>
+
+      
+
+        <button type="submit" class="submit-btn" >Login</button>
+    </form>
+
+    <div class="forgot-password">
+        <a href="#">Forgot Password?</a>
+    </div>
+</div>
+
+</body>
+</html>

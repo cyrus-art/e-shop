@@ -1,0 +1,166 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>About Us - [Shop Name]</title>
+    <style>
+        /* Reset */
+        body, h2, h3, p, a {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1000px;
+            margin: 2rem auto;
+            padding: 1rem 2rem;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Section */
+        .about-us {
+            padding: 2rem 1rem;
+        }
+
+        /* Headings */
+        .about-us h2 {
+            text-align: center;
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+
+        .about-us p {
+            font-size: 1.15rem;
+            line-height: 1.6;
+            margin-bottom: 1.5rem;
+            color: #555;
+        }
+
+        /* Button */
+        .btn-shop-now {
+            display: inline-block;
+            background-color: #007BFF;
+            color: white;
+            padding: 0.8rem 2rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+            float: right;
+            margin-bottom: 1.5rem;
+        }
+
+        .btn-shop-now:hover {
+            background-color: #0056b3;
+        }
+
+        /* About Content: text + image side by side */
+        .about-content {
+            display: flex;
+            gap: 2rem;
+            flex-wrap: wrap;
+            margin-bottom: 2rem;
+        }
+
+        .about-text {
+            flex: 1 1 400px;
+        }
+
+        .about-text h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #111;
+        }
+
+        .about-text p {
+            margin-bottom: 1rem;
+            color: #444;
+        }
+
+        .about-image {
+            flex: 1 1 400px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .about-image img {
+            max-width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+        }
+
+        /* Mission Section */
+        .mission {
+            margin-top: 2rem;
+        }
+
+        .mission h3 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            color: #111;
+            text-align: center;
+        }
+
+        .mission p {
+            font-size: 1.1rem;
+            line-height: 1.6;
+            color: #444;
+            max-width: 700px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .about-content {
+                flex-direction: column;
+            }
+
+            .btn-shop-now {
+                float: none;
+                display: block;
+                text-align: center;
+                margin-bottom: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+<section class="about-us">
+    <div class="container">
+        <a href="{% url 'third' %}" class="btn-shop-now">Home</a>
+
+        <h2>About Us</h2>
+        <p>Welcome to [Shop Name], your one-stop destination for the latest in fashion! We believe that every woman deserves to feel confident and beautiful, no matter the occasion. Whether you're looking for something elegant for a special event or a casual dress for everyday wear, we offer a wide variety of dresses to suit your unique style and personality.</p>
+
+        <div class="about-content">
+            <div class="about-text">
+                <h3>Our Story</h3>
+                <p>Founded in [Year], [Shop Name] has been on a mission to deliver high-quality, stylish dresses that make every woman feel empowered. We started with a passion for fashion and a vision to create a shopping experience that combines quality, affordability, and exceptional customer service.</p>
+                <p>Our carefully curated collection includes everything from formal gowns to casual dresses, ensuring that we have something perfect for every occasion. Whether you're attending a wedding, a cocktail party, or just enjoying a weekend outing, our dresses will make you stand out and feel amazing.</p>
+            </div>
+
+            <div class="about-image">
+                <img src="{% static 'img/3.png' %}" alt="Shop Image" />
+            </div>
+        </div>
+
+        <div class="mission">
+            <h3>Our Mission</h3>
+            <p>At [Shop Name], we aim to provide high-quality dresses that are both trendy and timeless. Our mission is to offer pieces that will last in your wardrobe, giving you the confidence to step out in style. We focus on delivering excellent customer service, ensuring you have the best shopping experience possible.</p>
+        </div>
+    </div>
+</section>
+</body>
+</html>

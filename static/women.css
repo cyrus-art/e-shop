@@ -1,0 +1,198 @@
+/* General Reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    font-size: 24px;
+}
+/* General Navigation Styles */
+header nav ul {
+    list-style-type: none;
+    padding: 0;
+    text-align: center;
+    display: flex;
+}
+
+header nav ul li {
+    display: inline-block; /* Makes sure the list items align horizontally */
+    margin: 0 15px; /* Space between the list items */
+}
+
+/* Link Styles */
+header nav ul li a {
+    text-decoration: none;
+    color: white; /* Default link color */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease; /* Smooth color transition */
+}
+
+/* Hover Effect */
+header nav ul li a:hover {
+    color: #553f0f; /* Color on hover */
+}
+
+/* Banner Section */
+.banner {
+    background-size: 500px;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.banner-content h2 {
+    font-size: 40px;
+    color: white;
+    font-weight: bold;
+}
+
+.banner-content p {
+    font-size: 18px;
+    color: white;
+    margin-top: 10px;
+}
+
+/* Featured Items Section */
+.featured {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+.featured h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.featured-items-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Each individual item frame */
+.featured-items .item {
+    width: 23%;  /* Set width of each item to 23% to create a 4-item row */
+    height: 250px;  /* Fixed height for the item container */
+    margin-bottom: 20px;  /* Add space between rows */
+    background-size: cover;  /* Ensure the background image covers the item container */
+    background-position: center;  /* Center the image within the container */
+    border-radius: 8px;  /* Optional: rounded corners for the container */
+    position: relative;  /* For positioning text over the image */
+    overflow: hidden;  /* Hide any overflow */
+    transition: transform 0.3s ease-in-out;  /* Smooth scale transition on hover */
+}
+
+.featured-items .item:hover {
+    transform: scale(1.05);  /* Slightly enlarge the item on hover */
+}
+
+/* Title and Price Styling */
+.featured-items .item h3,
+.featured-items .item p {
+    position: absolute;  /* Position text over the image */
+    bottom: 10px;  /* 10px from the bottom */
+    left: 10px;  /* 10px from the left */
+    color: white;  /* White text color */
+    margin: 0;
+    font-size: 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);  /* Optional: Add a shadow to the text for better readability */
+}
+
+/* Footer Section */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+footer h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+footer ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+footer ul li {
+    display: inline;
+}
+
+footer ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s;
+}
+
+footer ul li a:hover {
+    color: #007bff;
+}
+
+footer p {
+    font-size: 14px;
+    margin-top: 20px;
+}
+
+/* Scroll animations for featured items */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateX(-50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.featured-items .item {
+    animation: slideIn 0.5s ease-in-out forwards;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    .featured-items .item {
+        width: 48%;  /* On small screens, show two items per row */
+        height: 200px;  /* Adjust height for smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .featured-items .item {
+        width: 100%;  /* On very small screens, show one item per row */
+        height: 150px;  /* Adjust height further for very small screens */
+    }
+}

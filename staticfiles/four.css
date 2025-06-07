@@ -1,0 +1,175 @@
+/* General Body Styling */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #c293ee;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 60px; /* Ensure some space for the footer */
+}
+
+/* Header Styling */
+header {
+    background-color: #674975;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+/* Right-aligned Navigation Styling */
+nav {
+    position: absolute; /* position it on the right */
+    top: 20px; /* align it to the top of the page */
+    right: 20px; /* align it to the right */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section Styling */
+section {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 1.2em;
+    color: #555;
+}
+
+/* Cart Table Styling */
+.table {
+    width: 100%;
+    margin: 30px 0;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #fff;
+}
+
+.table th, .table td {
+    padding: 15px;
+    text-align: center;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table td button.action-btn {
+    background-color: #674975;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.table td button.action-btn:hover {
+    background-color: #c0392b;
+}
+
+/* Total Value and Pay Button Styling */
+.text-right {
+    margin-top: 20px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+#payNowBtn {
+    background-color: #674975;
+    color: white;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 20px;
+    display: block; /* Ensures the button stays on its own line */
+    width: 100%; /* Makes sure it stretches fully on the page */
+    max-width: 300px; /* Optional: limit the button width */
+    margin: 20px auto 20px auto; /* Centers it and ensures space around it */
+}
+
+#payNowBtn:hover {
+    background-color: #2ecc71;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #674975;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+    margin-top: 40px; /* Adds margin above footer */
+}
+
+/* Modal Styling */
+.modal-content {
+    border-radius: 8px;
+}
+
+.modal-header {
+    background-color: #000000;
+    color: white;
+}
+
+.modal-header .close {
+    color: white;
+}
+
+.modal-footer {
+    text-align: center;
+}
+
+.modal-footer button {
+    margin: 10px;
+}
+
+/* Responsiveness for smaller screens */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2em;
+    }
+
+    nav ul li {
+        display: block;
+        margin: 10px 0;
+    }
+
+    .table th, .table td {
+        font-size: 0.9em;
+        padding: 10px;
+    }
+
+    #payNowBtn {
+        font-size: 1em;
+        padding: 8px 16px;
+    }
+}
